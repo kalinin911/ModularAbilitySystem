@@ -19,13 +19,6 @@ namespace Assets.Scripts.Components.Management
                 GameObject abilitySystemObj = new GameObject("AbilitySystem");
                 abilitySystemObj.AddComponent<AbilitySystemManager>();
             }
-
-            // Ensure we have an EffectService
-            if (FindObjectOfType<EffectService>() == null)
-            {
-                GameObject effectServiceObj = new GameObject("EffectService");
-                effectServiceObj.AddComponent<EffectService>();
-            }
         }
 
         private void Start()

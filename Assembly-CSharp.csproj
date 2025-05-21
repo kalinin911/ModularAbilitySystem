@@ -63,9 +63,7 @@
     <Compile Include="Assets\Scripts\AbilitySystem\Core\Execution\AbilityExecutionContext.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\Consequences\Consequence.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\ScriptableObjects\Stat.cs" />
-    <Compile Include="Assets\Scripts\AbilitySystem\Core\Interfaces\IEffectService.cs" />
     <Compile Include="Assets\Scripts\Components\Camera\IsometricCameraFollow.cs" />
-    <Compile Include="Assets\Scripts\Components\Management\EffectService.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\Consequences\RectOverlapConsequence.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\ScriptableObjects\AbilityPhase.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\ScriptableObjects\AbilityBehaviour.cs" />
@@ -760,17 +758,17 @@
       <Project>{B970B409-D7AD-CD8D-ED76-5EF4224641CD}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
-      <Project>{BD9297B9-8CCA-3356-3410-DC9748F84337}</Project>
-      <Name>Unity.VisualScripting.Shared.Editor</Name>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{300EF4EE-74BC-D2B7-7342-1FB2A934674D}</Project>
+      <Name>UniTask.DOTween</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.Addressables.csproj">
       <Project>{DB669258-717C-77BE-58ED-C552275B99C0}</Project>
       <Name>UniTask.Addressables</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.DOTween.csproj">
-      <Project>{300EF4EE-74BC-D2B7-7342-1FB2A934674D}</Project>
-      <Name>UniTask.DOTween</Name>
+    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
+      <Project>{BD9297B9-8CCA-3356-3410-DC9748F84337}</Project>
+      <Name>Unity.VisualScripting.Shared.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{040B894B-5EBE-A0F7-AA8F-EC9E9383B713}</Project>

@@ -33,23 +33,5 @@ namespace Assets.Scripts.AbilitySystem.Core.Consequences
 
             await UniTask.CompletedTask;
         }
-
-        private void ApplyDamageToTarget(Transform target)
-        {
-            // Try to apply damage to the target
-            var health = target.GetComponent<Health>();
-
-            if (health != null)
-            {
-                Debug.Log($"Dealing {_damageAmount.Value} damage to {target.name}");
-
-                // Apply the actual damage
-                health.TakeDamage(_damageAmount.Value);
-            }
-            else
-            {
-                Debug.LogWarning($"Target {target.name} has no Health component!");
-            }
-        }
     }
 }

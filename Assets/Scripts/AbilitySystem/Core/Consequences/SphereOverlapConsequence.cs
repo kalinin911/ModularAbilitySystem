@@ -21,18 +21,6 @@ namespace Assets.Scripts.AbilitySystem.Core.Consequences
 
             Debug.DrawLine(center, center + Vector3.up * 0.1f, Color.blue, 1f);
 
-            if (_showEffect && context.EffectService != null)
-            {
-                if (isStompEffect)
-                {
-                    context.EffectService.PlayStompEffect(center);
-                }
-                else
-                {
-                    context.EffectService.PlayCircleSlashEffect(center);
-                }
-            }
-
             // Find targets using Physics.OverlapSphere
             Collider[] hits = Physics.OverlapSphere(center, _radius.Value, _targetLayers);
 

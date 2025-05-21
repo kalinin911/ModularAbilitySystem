@@ -26,11 +26,6 @@ namespace Assets.Scripts.AbilitySystem.Core
 
             Debug.DrawLine(center - halfExtents, center + halfExtents, Color.red, 1f);
 
-            if(_showEffect && context.EffectService != null)
-            {
-                context.EffectService.PlayQuickSlashEffect(center, casterTransform.forward);
-            }
-
             // Find targets using Physics.OverlapBox
             Collider[] hits = Physics.OverlapBox(center, halfExtents, casterTransform.rotation, _targetLayers);
 

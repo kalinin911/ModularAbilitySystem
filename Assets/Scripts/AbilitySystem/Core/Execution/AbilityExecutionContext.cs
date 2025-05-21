@@ -11,15 +11,12 @@ namespace Assets.Scripts.AbilitySystem.Core
     {
         private Dictionary<ParameterKey, object> _parameters = new Dictionary<ParameterKey, object>();
         private Transform _caster;
-        private IEffectService _effectService;
-        public AbilityExecutionContext(Transform caster, IEffectService effectService = null)
+        public AbilityExecutionContext(Transform caster)
         {
             _caster = caster;
-            _effectService = effectService;
         }
 
         public Transform Caster => _caster;
-        public IEffectService EffectService => _effectService;
 
         public void SetParameter<T>(ParameterKey key, T value)
         {

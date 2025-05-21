@@ -13,7 +13,6 @@ namespace Assets.Scripts.Components.Character
 
         private AbilityExecutionContext _executionContext;
         private IAbilitySystem _abilitySystem;
-        private IEffectService _effectService;
 
         //Property for abilities for UI purposes
         public IReadOnlyList<Ability> Abilities => _abilities;
@@ -30,11 +29,8 @@ namespace Assets.Scripts.Components.Character
                 _abilitySystem = gameObject.AddComponent<AbilitySystemManager>();
             }
 
-            // Find the effect service in the scene
-            _effectService = FindObjectOfType<EffectService>();
-
             // Create the execution context
-            _executionContext = new AbilityExecutionContext(transform, _effectService);
+            _executionContext = new AbilityExecutionContext(transform);
         }
 
         private void Update()
