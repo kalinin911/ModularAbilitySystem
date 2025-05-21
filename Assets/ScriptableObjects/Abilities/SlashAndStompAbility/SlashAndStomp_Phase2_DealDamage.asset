@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _chainedConsequences: []
   _damageAmount: {fileID: 11400000, guid: 3866fa888d0ed8448ae71e32f345b5cd, type: 2}
-  _targetKey: {fileID: 11400000, guid: e19b0156ec690f442b9cd3f3b4af853a, type: 2}
+  _targetKey: {fileID: 11400000, guid: 1da3336fdd0670847af165894ec856e4, type: 2}
   _showDamageText: 1
