@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18f89e844f245347b35cc6b6e2531d5, type: 3}
+  m_Name: CircularSlash_Phase
+  m_EditorClassIdentifier: 
+  _duration: {fileID: 11400000, guid: c14c9bd1c2698dd4b9dd505a3c6a8fd9, type: 2}
+  _timedConsequences:
+  - NormalizedTime: 0
+    Consequences:
+    - {fileID: 11400000, guid: 817115df379b49547931edfc844b35c4, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15a8769a945b224a999870858d5519e, type: 3}
+  m_Name: SlashAndStomp_Phase1_RectOverlap
+  m_EditorClassIdentifier: 
+  _chainedConsequences:
+  - {fileID: 11400000, guid: 85637a3d1bf730f4988d8357de3666fc, type: 2}
+  _width: {fileID: 11400000, guid: 276e23ed4477dd943872670b60d6ba4b, type: 2}
+  _height: {fileID: 11400000, guid: 8acfe155193b0e24ea99ecd1c3d1d4b2, type: 2}
+  _depth: {fileID: 11400000, guid: e0532951c4642fa438447e34a17b07c4, type: 2}
+  _forwardOffest: 1
+  _targetLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  _outputTargetsKey: {fileID: 11400000, guid: 1da3336fdd0670847af165894ec856e4, type: 2}
+  _showEffect: 1

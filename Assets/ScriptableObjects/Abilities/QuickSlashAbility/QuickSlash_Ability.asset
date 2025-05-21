@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa62b31488cbd14468c723248936aa05, type: 3}
+  m_Name: QuickSlash_Ability
+  m_EditorClassIdentifier: 
+  _abilityId: QuickSlash
+  _behaviour: {fileID: 11400000, guid: 45703304db7d8624ba9ad609ea350b2d, type: 2}
+  _cooldownDuration: {fileID: 11400000, guid: 9388efb8ee8b908469bf1918380529ab, type: 2}
+  _inputKey: 50

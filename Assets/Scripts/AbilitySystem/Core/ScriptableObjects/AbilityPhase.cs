@@ -2,13 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts.AbilitySystem.Core
 {
-    [CreateAssetMenu(fileName = "New Ability Behaviour", menuName = "Ability System/Ability Behaviour")]
+    [CreateAssetMenu(fileName = "New Ability Phase", menuName = "Ability System/Ability Phase")]
     public class AbilityPhase : ScriptableObject
     {
         [Serializable]

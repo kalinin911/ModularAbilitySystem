@@ -54,25 +54,13 @@ namespace Assets.Scripts.Components.Character
 
         private void HandleAbilityActivation()
         {
-            float horizontal = Input.GetAxis("Horizontal");
-            float vertical = Input.GetAxis("Vertical");
-
-            Vector3 movement = new Vector3(horizontal, 0f, vertical);
-
-            // Normalize movement to prevent faster diagonal movement
-            if (movement.magnitude > 1f)
+            // Check each ability for its keybind
+            foreach (var ability in _abilities)
             {
-                movement.Normalize();
-            }
-
-            // Move the character
-            transform.position += movement * _moveSpeed * Time.deltaTime;
-
-            // Rotate character to face movement direction
-            if (movement != Vector3.zero)
-            {
-                Quaternion targetRotation = Quaternion.LookRotation(movement);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
+                if (Input.GetKeyDown(ability.InputKey))
+                {
+                    ActivateAbility(ability).Forget();
+                }
             }
         }
 
