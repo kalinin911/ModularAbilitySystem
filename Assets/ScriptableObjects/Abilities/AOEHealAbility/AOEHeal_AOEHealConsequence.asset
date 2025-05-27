@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6093b8fded7834cb8b0df49dea4ee1, type: 3}
+  m_Name: AOEHeal_AOEHealConsequence
+  m_EditorClassIdentifier: 
+  _chainedConsequences: []
+  _healAmount: {fileID: 11400000, guid: 4496dd6717807c844906f91d052a844f, type: 2}
+  _radius: {fileID: 11400000, guid: fd8ea028c1a692c4399764aeedc68e57, type: 2}
+  _allyLayers:
+    serializedVersion: 2
+    m_Bits: 320
+  _includeCaster: 1
+  _showHealEffect: 1
+  _healEffectPrefab: {fileID: 0}
+  _onlyHealDamaged: 0

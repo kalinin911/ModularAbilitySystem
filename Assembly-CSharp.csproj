@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\AbilitySystem\Core\Parameters\TargetKey.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\ScriptableObjects\Ability.cs" />
     <Compile Include="Assets\Scripts\Components\Management\AbilitySystemManager.cs" />
+    <Compile Include="Assets\Scripts\AbilitySystem\Core\Consequences\AOEHealConsequence.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\ScriptableObjects\ParameterKey.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\Parameters\TargetsListKey.cs" />
     <Compile Include="Assets\Scripts\Components\Management\GameManager.cs" />
