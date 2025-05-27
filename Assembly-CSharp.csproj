@@ -65,11 +65,13 @@
     <Compile Include="Assets\Scripts\AbilitySystem\Core\ScriptableObjects\Stat.cs" />
     <Compile Include="Assets\Scripts\Components\Camera\IsometricCameraFollow.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\Consequences\RectOverlapConsequence.cs" />
+    <Compile Include="Assets\Scripts\AbilitySystem\Core\Consequences\ClickTargetConsequence.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\ScriptableObjects\AbilityPhase.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\ScriptableObjects\AbilityBehaviour.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\Consequences\DealDamageConsequence.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\Interfaces\IAbilitySystem.cs" />
     <Compile Include="Assets\Scripts\Components\Character\Health.cs" />
+    <Compile Include="Assets\Scripts\AbilitySystem\Core\Consequences\HealConsequence.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\Parameters\TargetKey.cs" />
     <Compile Include="Assets\Scripts\AbilitySystem\Core\ScriptableObjects\Ability.cs" />
     <Compile Include="Assets\Scripts\Components\Management\AbilitySystemManager.cs" />

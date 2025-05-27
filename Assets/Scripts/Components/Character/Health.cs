@@ -14,6 +14,9 @@ namespace Assets.Scripts.Components.Character
 
         private float _currentHealth;
 
+        public bool IsFullHealth => _currentHealth >= _maxHealth;
+        public float HealthPercentage => _currentHealth / _maxHealth;
+
         public event Action<float, float> OnHealthChanged;
         public event Action OnDeath;
 
@@ -32,6 +35,16 @@ namespace Assets.Scripts.Components.Character
             {
                 Die();
             }
+        }
+
+        public void Heal(float amount)
+        {
+            float oldHealth = _currentHealth;
+            _currentHealth = Mathf.Min(_currentHealth + amount, _maxHealth); // Don't exceed max health
+            float actualHealing = _currentHealth - oldHealth;
+
+            Debug.Log($"{gameObject.name} healed for {actualHealing} HP. Health: {_currentHealth}/{_maxHealth}");
+            OnHealthChanged?.Invoke(_currentHealth, _maxHealth);
         }
 
         private void Die() 

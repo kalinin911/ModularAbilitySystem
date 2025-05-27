@@ -55,7 +55,7 @@ namespace Assets.Scripts.Components.Character
             {
                 if (Input.GetKeyDown(ability.InputKey))
                 {
-                    ActivateAbility(ability).Forget();
+                    ActivateAbilityAsync(ability).Forget();
                 }
             }
         }
@@ -84,7 +84,7 @@ namespace Assets.Scripts.Components.Character
             }
         }
 
-        private async UniTask ActivateAbility(Ability ability)
+        private async UniTask ActivateAbilityAsync(Ability ability)
         {
             Debug.Log($"Attempting to use ability: {ability.AbilityId}");
             bool success = await ability.TryExecuteAsync(_executionContext, _abilitySystem);

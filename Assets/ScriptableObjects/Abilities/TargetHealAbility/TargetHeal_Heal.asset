@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312bf7da63ba42146b17962c74759fa1, type: 3}
+  m_Name: TargetHeal_Heal
+  m_EditorClassIdentifier: 
+  _chainedConsequences: []
+  _healAmount: {fileID: 11400000, guid: f123f01c323ea9a4882a3cc5e48e24e6, type: 2}
+  _targetKey: {fileID: 11400000, guid: eff9682fa0cc36748b12eec01168d1f9, type: 2}
+  _showHealText: 1
+  _healTextColor: {r: 0, g: 1, b: 0, a: 1}
